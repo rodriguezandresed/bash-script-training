@@ -1,7 +1,7 @@
 example scripts:
 variable_name_script.sh
 
-//naming variables, you can see this variable once you type myname
+//naming variables, you can see this variable once you type myname NO SPACES BETWEEN THE = 
 myname="Andres"
 
 //variables need to be typed as $variablename otherwise it will only print "myname"
