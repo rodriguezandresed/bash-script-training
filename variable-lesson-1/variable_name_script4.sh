@@ -1,7 +1,7 @@
 #!/bin/bash
 
-name = "Andres Rodriguez"
-now = $(date)
+name="Andres Rodriguez"
+now=$(date)
 
 echo "Hello $name"
 
