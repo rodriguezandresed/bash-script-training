@@ -1,0 +1,20 @@
+//If statements with test commands are created with brackets [] IT'S IMPORTANT TO HAVE ONE SPACE BETWEEN BRACKETS 
+(START AND END) and you finish if statements with fi
+#brackets are only needed if you use the tests commands!
+
+ctrl + c lets you run nano to the background, you can reopen it with fg
+
+if [ condition ] 
+then
+    result if true
+else
+    result if false
+fi
+
+you can add ! to the condition to negate it
+
+conditionals:
+
+-eq -> equal to
+-ne -> not equal 
+-gt -> greater than
