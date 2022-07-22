@@ -1,5 +1,4 @@
-Bash is a shell, allows us to enter commands and represent them as output
-
+Bash is a shell, that allows us to enter commands and represent them as output
 
 This command allows us to see  which shell we're currently using
  i.e: echo $SHELL 
