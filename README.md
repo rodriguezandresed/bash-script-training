@@ -1,3 +1,7 @@
+#This repository contains the training environment and notes I used while completing the Bash Script Training by David Bombal
+
+
+
 Bash is a shell, that allows us to enter commands and represent them as output
 
 This command allows us to see  which shell we're currently using
