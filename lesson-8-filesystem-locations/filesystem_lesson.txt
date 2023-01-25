@@ -1,0 +1,25 @@
+Scripts are better to be stored on a directory where administrators could excecute them too
+
+Linux has a FHS (Filesystem Hierarchy Standard) that describes the conventions used for each directory 
+in an UNIX system. (clarifies their purpose)
+
+The bin directory is where scripts are supposed to be located
+/user/local/bin
+
+for example, for the update script:
+/user/local/bin/update
+
+The command chown root:root changes the user and group of the specified file or directory to user root and group root. 
+changing the ownership to user:group of /user/local/bin/update
+sudo chown root:root /user/local/bin/update
+
+.sh is actually not needed, that's why it's only called update
+
+and you can type "update" on the console and the script will execute as it already knows (due $PATH) that the path is where it's supposed to be 
+
+It knows because there's a variable $PATH which contains the environment variables so it searchs for the Scripts
+on all those directories
+
+You can add more paths to the env using as it saves the already existing directories and adds the new directory 
+(assuming we're adding /usr/local/bin)
+export PATH =/usr/local/bin:$PATH

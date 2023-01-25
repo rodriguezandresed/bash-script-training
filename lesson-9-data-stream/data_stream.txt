@@ -1,0 +1,39 @@
+An standard output (stout) is a data-stream output to the stream for example:
+The command ls show an standard output
+
+
+stdin: Stands for standard input. It takes text as input. (when user makes an input)
+stdout: Stands for standard output. The text output of a command is stored in the stdout stream.
+stderr: Stands for standard error. Whenever a command faces an error, the error message is stored in this stream.
+
+An easy way to access any file is by using the unique file descriptor number associated with it. In the case of these streams, there are unique values assigned to each one of them.
+
+0: stdin
+1: stdout
+2: stderr
+
+
+find command allows you to find files that meet a criteria 
+
+find /etc -type f 
+
+^ this kind of command shows both stout and stderr
+
+> is a redirect, so it's redirecting anything that's a 2 to /dev/null is a special directory where if you copy or move
+into it, it gets deleted, and 2 is stderr
+2> /dev/null
+> /dev/null shows everything that's a stderr, as 1 (stdout) is implied on the >
+find /etc -type f 1> file.txt will redirect all stdout to a text file
+
+ &>  sends both stderr and stout to another place
+
+find /etc -type f 2> /dev/null
+
+This allows us to separate error and results to a single place for inspection
+find /etc -type f > find_results.txt 2> find_errors.txt
+
+>> is append, not override >
+
+
+tail command shows a file in almost real time
+

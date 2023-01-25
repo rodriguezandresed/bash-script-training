@@ -1,0 +1,23 @@
+Always make sure you're on the server/machine/whatever 
+that needs to have the script working, that way, you're sure
+that the script will work where it's supposed to 
+
+at -> command , enables scritps to be run at a certain time
+
+remember you can use " which at"  to see if you have it installed
+
+Then with at command for the script to run at 3:32 pm:
+
+
+the -f is to set the file to execute
+at 15:32 -f ./scheduling_script1.sh
+
+you can see which scripts are queued using:
+
+atq 
+
+you can use to remove queued jobs:
+
+atrm #ofjob
+
+at 18:00 081622 -f ./scheduling_script1.sh

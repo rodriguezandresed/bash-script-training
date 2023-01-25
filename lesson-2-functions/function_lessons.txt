@@ -1,0 +1,16 @@
+For bash you can evaluate an expression using expr
+
+ie: expr 30+10 -> 40
+ie: expr 30 - 10 -> 20
+ie: expr 30/10 -> 3
+ie: expr 100 \* 4 -> 400  you can use \ to override special functions for example for * that is a wildcard
+
+you can use variables to use it with expressions such as:
+
+ie: mynum1 = 100
+ie: expr $mynum + 50 -> 150
+
+
+
+
+
